@@ -47,6 +47,7 @@ import java.io.ByteArrayInputStream;
 import java.io.EOFException;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -148,10 +149,15 @@ public class DaemonMain extends EntryPoint {
         new DaemonStartupCommunication().printDaemonStarted(originalOut, pid, uid, address, daemonLog);
         try {
             originalOut.close();
-            originalErr.close();
+            //originalErr.close();
         } finally {
             originalOut = null;
-            originalErr = null;
+            //originalErr = null;
+        }
+        try {
+            originalErr.write(("test" + System.lineSeparator()).getBytes());
+        } catch (IOException e) {
+            // 
         }
     }
 

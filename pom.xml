@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.gradle</groupId>
+	<artifactId>launcher</artifactId>
+	<version>7.6</version>
+	<packaging>jar</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<my.gradle.groupId>org.gradle</my.gradle.groupId>
+		<my.gradle.version>7.6</my.gradle.version>
+		<my.gradle.lib.dir>C:\Program Files\Mendix\gradle-7.6\lib</my.gradle.lib.dir>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>gradle-artifactory-public</id>
+			<name>gradle-artifactory-public</name>
+			<url>https://repo.gradle.org/artifactory/public</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>api-metadata</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-api-metadata-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>base-annotations</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-base-annotations-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>base-services</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-base-services-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>base-services-groovy</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-base-services-groovy-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-bootstrap-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>build-cache</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-build-cache-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>build-cache-base</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-build-cache-base-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>build-cache-packaging</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>
+				${my.gradle.lib.dir}/gradle-build-cache-packaging-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>build-events</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-build-events-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>build-operations</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-build-operations-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>build-option</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-build-option-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>cli</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-cli-7.6.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>core-api</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-core-api-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>enterprise-logging</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-enterprise-logging-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>enterprise-operations</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>
+				${my.gradle.lib.dir}/gradle-enterprise-operations-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>enterprise-workers</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-enterprise-workers-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>execution</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-execution-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>file-collections</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-file-collections-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>file-temp</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-file-temp-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>file-watching</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-file-watching-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>files</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-files-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>functional</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-functional-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>hashing</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-hashing-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>installation-beacon</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-installation-beacon-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>jvm-services</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-jvm-services-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>kotlin-dsl</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-kotlin-dsl-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>kotlin-dsl-tooling-models</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>
+				${my.gradle.lib.dir}/gradle-kotlin-dsl-tooling-models-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>core</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-core-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>logging</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-logging-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>logging-api</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-logging-api-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>messaging</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-messaging-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>model-core</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-model-core-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>model-groovy</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-model-groovy-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>native</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-native-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>normalization-java</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-normalization-java-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>persistent-cache</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-persistent-cache-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>problems</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-problems-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>process-services</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-process-services-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>resources</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-resources-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>runtime-api-info</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-runtime-api-info-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>snapshots</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-snapshots-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>tooling-api</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-tooling-api-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>worker-processes</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-worker-processes-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>worker-services</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-worker-services-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>${my.gradle.groupId}</groupId>
+			<artifactId>wrapper-shared</artifactId>
+			<version>${my.gradle.version}</version>
+			<scope>system</scope>
+			<systemPath>${my.gradle.lib.dir}/gradle-wrapper-shared-7.6.jar</systemPath>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.codehaus.groovy</groupId>
+			<artifactId>groovy-all</artifactId>
+			<version>3.0.13</version>
+			<type>pom</type>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.30</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ow2.asm</groupId>
+			<artifactId>asm-commons</artifactId>
+			<version>7.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.findbugs</groupId>
+			<artifactId>jsr305</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.1-jre</version>
+		</dependency>
+		<dependency>
+			<groupId>net.rubygrapefruit</groupId>
+			<artifactId>native-platform</artifactId>
+			<version>0.22-milestone-24</version>
+		</dependency>
+		<dependency>
+			<groupId>net.rubygrapefruit</groupId>
+			<artifactId>file-events</artifactId>
+			<version>0.22-milestone-24</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+				<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tomlj</groupId>
+			<artifactId>tomlj</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!--
+	-->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
